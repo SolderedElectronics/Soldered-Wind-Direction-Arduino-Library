@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['err_0',['err',['../class_easy_c.html#a8b880d5daf116adde0cc436f1e4c0853',1,'EasyC']]]
+  ['pin_0',['pin',['../class_wind_direction_sensor.html#aaa21a0f720f88d5d62d1223b551ec689',1,'WindDirectionSensor']]]
 ];

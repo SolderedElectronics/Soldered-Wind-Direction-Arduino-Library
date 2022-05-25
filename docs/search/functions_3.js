@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['readdata_0',['readData',['../class_easy_c.html#a9a3d39be50b348768bc4b5dea3dae01a',1,'EasyC']]],
-  ['readregister_1',['readRegister',['../class_easy_c.html#a45bd6c915c1fa0998e273f69ee2d2376',1,'EasyC']]]
+  ['winddirection_0',['windDirection',['../class_wind_direction_sensor.html#a1af12b82dd09fb906cd45c2d9155f359',1,'WindDirectionSensor']]],
+  ['winddirectionsensor_1',['WindDirectionSensor',['../class_wind_direction_sensor.html#a00cd6da4ba05d5f84b7ebbb7bd21c460',1,'WindDirectionSensor']]]
 ];

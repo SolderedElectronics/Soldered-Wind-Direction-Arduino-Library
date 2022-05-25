@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['easyc_0',['EasyC',['../class_easy_c.html#a2ea672a225a32eab52c2b20733fd26bd',1,'EasyC']]]
+  ['getadcwidth_0',['getADCWidth',['../class_wind_direction_sensor.html#a5759de478a5cfdaf97407b6dbbf64c6d',1,'WindDirectionSensor']]],
+  ['getdegrees_1',['getDegrees',['../class_wind_direction_sensor.html#a6ee8d2aba672d5cbf165f3c1ee164c74',1,'WindDirectionSensor']]]
 ];

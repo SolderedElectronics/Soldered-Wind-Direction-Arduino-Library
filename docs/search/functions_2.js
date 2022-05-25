@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['initializenative_0',['initializeNative',['../class_sensor.html#adb537c76173019fddf84b2d89e6c6559',1,'Sensor::initializeNative()'],['../class_easy_c.html#a48c8aa55d48ef0cc11047cab0735c998',1,'EasyC::initializeNative()']]]
+  ['setadcwidth_0',['setADCWidth',['../class_wind_direction_sensor.html#aea614a05986d16e30e5838e5d38c2650',1,'WindDirectionSensor']]]
 ];

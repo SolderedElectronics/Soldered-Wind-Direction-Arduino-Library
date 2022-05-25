@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>16x2 easyC LCD Library: libs Directory Reference</title>
+<title>Wind Direction Sensor Library: Wind-Direction-Library-SOLDERED.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,9 +28,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">16x2 easyC LCD Library<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">Wind Direction Sensor Library<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">This is a library for the 16x2 easyC LCD Module</div>
+   <div id="projectbrief">This is a library for the Wind Direction Sensor</div>
   </td>
  </tr>
  </tbody>
@@ -67,7 +67,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('dir_87a455bccb09a92130c26a11a880c98a.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('_wind-_direction-_library-_s_o_l_d_e_r_e_d_8h.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -86,24 +86,58 @@ $(document).ready(function(){initNavTree('dir_87a455bccb09a92130c26a11a880c98a.h
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">libs Directory Reference</div></div>
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Wind-Direction-Library-SOLDERED.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Header file for sensor specific code.  
+<a href="#details">More...</a></p>
+
+<p><a href="_wind-_direction-_library-_s_o_l_d_e_r_e_d_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="subdirs" name="subdirs"></a>
-Directories</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">directory &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dir_3db0dda00e9f66085ea9403aa7e09fb8.html">Generic-easyC</a></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_wind_direction_sensor.html">WindDirectionSensor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a295d768a42088cb9af9968875ad2ba84"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_wind-_direction-_library-_s_o_l_d_e_r_e_d_8h.html#a295d768a42088cb9af9968875ad2ba84">cardinal_directions</a> [][4]</td></tr>
+<tr class="separator:a295d768a42088cb9af9968875ad2ba84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Header file for sensor specific code. </p>
+<dl class="section copyright"><dt>Copyright</dt><dd>GNU General Public License v3.0 </dd></dl>
+<dl class="section author"><dt>Authors</dt><dd>Goran Juric @ soldered.com </dd></dl>
+</div><h2 class="groupheader">Variable Documentation</h2>
+<a id="a295d768a42088cb9af9968875ad2ba84" name="a295d768a42088cb9af9968875ad2ba84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a295d768a42088cb9af9968875ad2ba84">&#9670;&nbsp;</a></span>cardinal_directions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char cardinal_directions[][4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {<span class="stringliteral">&quot;N&quot;</span>, <span class="stringliteral">&quot;NNE&quot;</span>, <span class="stringliteral">&quot;NE&quot;</span>, <span class="stringliteral">&quot;ENE&quot;</span>, <span class="stringliteral">&quot;E&quot;</span>, <span class="stringliteral">&quot;ESE&quot;</span>, <span class="stringliteral">&quot;SE&quot;</span>, <span class="stringliteral">&quot;SSE&quot;</span>,</div>
+<div class="line">                                       <span class="stringliteral">&quot;S&quot;</span>, <span class="stringliteral">&quot;SSW&quot;</span>, <span class="stringliteral">&quot;SW&quot;</span>, <span class="stringliteral">&quot;WSW&quot;</span>, <span class="stringliteral">&quot;W&quot;</span>, <span class="stringliteral">&quot;WNW&quot;</span>, <span class="stringliteral">&quot;NW&quot;</span>, <span class="stringliteral">&quot;NNW&quot;</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath">
     <!-- id is needed for treeview function! -->
     <ul>
-        <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_87a455bccb09a92130c26a11a880c98a.html">libs</a></li>
+        <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_wind-_direction-_library-_s_o_l_d_e_r_e_d_8h.html">Wind-Direction-Library-SOLDERED.h</a></li>
         <li class="footer">
-            Generated on Tue May 24 2022 14:22:50 for 16x2 easyC LCD Library by <a href="http://www.doxygen.org/index.html">
+            Generated on Wed May 25 2022 10:45:12 for Wind Direction Sensor Library by <a href="http://www.doxygen.org/index.html">
                 <img class="footer" src="doxygen.png" alt="doxygen"
                     onerror="this.onerror=null;this.src='doxygen.svg';" /></a> 1.9.4.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
