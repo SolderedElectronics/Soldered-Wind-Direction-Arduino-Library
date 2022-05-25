@@ -25,7 +25,7 @@ WindDirectionSensor::WindDirectionSensor(int _pin, float _analogVoltage)
 
 #if defined(ARDUINO_ARDUINO_AVR_NANO) || defined(ARDUINO_AVR_MEGA2560) || defined(ARDUINO_AVR_ATmega328)
 
-    analogVoltage = 4.7; // Development board takes input voltage for reference for 
+    analogVoltage = 4.7; // Development board takes input voltage for reference for
                          // measuring analog voltage. 5 volts from USB input has slight
                          // voltage drop so we here compensate for that.
 
@@ -46,7 +46,7 @@ WindDirectionSensor::WindDirectionSensor(int _pin, float _analogVoltage)
 float WindDirectionSensor::getDegrees()
 {
     float val = ((float)analogRead(pin) / (float)ADCWidth) * 360;
-    if(val > 360)
+    if (val > 360)
     {
         return 0;
     }
@@ -106,7 +106,7 @@ const char *WindDirectionSensor::cardinalDir()
     {
         val += 360;
     }
-    return (const char*)cardinal_directions[(int)(val / 22.5) > 15 ? 0 : (int)(val / 22.5)];
+    return (const char *)cardinal_directions[(int)(val / 22.5) > 15 ? 0 : (int)(val / 22.5)];
 }
 
 /**
