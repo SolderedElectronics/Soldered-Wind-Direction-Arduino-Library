@@ -4,9 +4,9 @@
 
 | ![Wind Direction Sensor](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
 | :---------------------------------------------------------------------------------------------: |
-| [Wind Direction Sensor](https://www.solde.red/SKU)                                                            |
+| [Wind Direction Sensor](https://www.solde.red/333197)                                                            |
 
-OPIS PROIZVODA + LINK NA [easyC ecosystem](https://www.soldered.com/easyC). 
+Wind Direction Sensor compliant to [easyC ecosystem](https://www.soldered.com/easyC). 
 
 ### Repository Contents
 - **/src** - source files for the library (.h & .cpp)

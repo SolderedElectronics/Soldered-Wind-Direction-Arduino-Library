@@ -1,23 +1,19 @@
 ##################################################
-# Syntax Coloring Map For Obstacle-Sensor-SOLDERED
+# Syntax Coloring Map Wind-Direction-SOLDERED
 ##################################################
 
 ##################################################
-# Datatypes (KEYWORD1)
+# Datatypes 		(KEYWORD1)
 ##################################################
-
-WindDirectionSensor KEYWORD1
-
+WindDirectionSensor		KEYWORD1
 ##################################################
 # Methods and Functions (KEYWORD2)
 ##################################################
 
-windDirection  KEYWORD2
-setADCWidth  KEYWORD2
-getADCWidth  KEYWORD2
-cardinalDir  KEYWORD2
-calibrate  KEYWORD2
-getDegrees  KEYWORD2
+windDirection	    		  KEYWORD2
+cardinalDir		    KEYWORD2
+calibrateDirection		    KEYWORD2
+calibrateADC		    KEYWORD2
 
 ##################################################
 # Constants (LITERAL1)

@@ -20,12 +20,11 @@ const char cardinal_directions[][4] = {"N", "NNE", "NE", "ENE", "E", "ESE", "SE"
 class WindDirectionSensor
 {
   public:
-    WindDirectionSensor(int _pin, float _analogVoltage = 5);
+    WindDirectionSensor(int _pin);
     float windDirection();
-    void setADCWidth(uint16_t _value);
-    uint16_t getADCWidth();
     const char *cardinalDir();
-    void calibrate();
+    void calibrateDirection();
+    void calibrateADC();
 
   protected:
   private:
@@ -33,7 +32,6 @@ class WindDirectionSensor
     int pin;
     uint16_t ADCWidth = 765;
     float offset = 0;
-    float analogVoltage = 5;
 };
 
 #endif
