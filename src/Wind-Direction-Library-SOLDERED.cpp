@@ -25,7 +25,7 @@ WindDirectionSensor::WindDirectionSensor(int _pin)
 float WindDirectionSensor::getDegrees()
 {
     float val = ((float)analogRead(pin) / (float)ADCWidth) * 360;
-    if(val > 360)
+    if (val > 360)
     {
         return 0;
     }
@@ -65,7 +65,7 @@ const char *WindDirectionSensor::cardinalDir()
     {
         val += 360;
     }
-    return (const char*)cardinal_directions[(int)(val / 22.5) > 15 ? 0 : (int)(val / 22.5)];
+    return (const char *)cardinal_directions[(int)(val / 22.5) > 15 ? 0 : (int)(val / 22.5)];
 }
 
 /**
