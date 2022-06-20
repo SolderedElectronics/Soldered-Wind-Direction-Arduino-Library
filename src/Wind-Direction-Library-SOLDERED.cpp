@@ -16,31 +16,10 @@
  *
  * @param int _pin          Example parameter.
  */
-WindDirectionSensor::WindDirectionSensor(int _pin, float _analogVoltage)
+WindDirectionSensor::WindDirectionSensor(int _pin)
 {
     pin = _pin;
     pinMode(pin, INPUT);
-
-#ifndef ANALOG_VOLTAGE
-
-#if defined(ARDUINO_ARDUINO_AVR_NANO) || defined(ARDUINO_AVR_MEGA2560) || defined(ARDUINO_AVR_ATmega328)
-
-    analogVoltage = 4.7; // Development board takes input voltage for reference for 
-                         // measuring analog voltage. 5 volts from USB input has slight
-                         // voltage drop so we here compensate for that.
-
-#elif defined(ARDUINO_ESP32_DEV) || defined(ARDUINO_ESP8266_GENERIC) || defined(ARDUINO_STM32F103)
-
-    analogVoltage = 3.3;
-
-#else
-
-    analogVoltage = _analogVoltage;
-
-#endif
-
-#endif
-    setADCWidth(10);
 }
 
 float WindDirectionSensor::getDegrees()
@@ -74,26 +53,6 @@ float WindDirectionSensor::windDirection()
 }
 
 /**
- * @brief                   Function which sets ADC width
- *
- * @param   uint16_t value  ADC width to be set
- */
-void WindDirectionSensor::setADCWidth(uint16_t _value)
-{
-    ADCWidth = ((1 << _value) - 1) * 3.3 / analogVoltage;
-}
-
-/**
- * @brief                   Function which gets ADC width
- *
- * @return                  ADC width
- */
-uint16_t WindDirectionSensor::getADCWidth()
-{
-    return ADCWidth;
-}
-
-/**
  * @brief                   Function which returns wind direction in cardinal directions
  *
  * @return                  Wind direction in cardinal directions
@@ -114,8 +73,43 @@ const char *WindDirectionSensor::cardinalDir()
  *
  *
  */
-void WindDirectionSensor::calibrate()
+void WindDirectionSensor::calibrateDirection()
 {
     float temp = getDegrees();
     offset = -temp;
+}
+
+/**
+ * @brief                   Function which calibrates sensor to make it measure correct angle
+ *
+ *
+ */
+void WindDirectionSensor::calibrateADC()
+{
+    bool calibDone = 0;
+    uint16_t now = 0, prev = 0, max = 0;
+    uint8_t cnt = 0;
+    while(!calibDone)
+    {
+        now = analogRead(pin);
+        if(now > max)
+        {
+            max = now;
+        }
+        if (now < max)
+        {
+            cnt++;
+        }
+        else
+        {
+            cnt = 0;
+        }
+        if(cnt > 250)
+        {
+            calibDone = 1;
+        }
+        prev = now;
+        delay(10);
+    }
+    ADCWidth = max;
 }
