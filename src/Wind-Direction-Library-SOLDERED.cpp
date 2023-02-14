@@ -89,10 +89,10 @@ void WindDirectionSensor::calibrateADC()
     bool calibDone = 0;
     uint16_t now = 0, prev = 0, max = 0;
     uint8_t cnt = 0;
-    while(!calibDone)
+    while (!calibDone)
     {
         now = analogRead(pin);
-        if(now > max)
+        if (now > max)
         {
             max = now;
         }
@@ -104,7 +104,7 @@ void WindDirectionSensor::calibrateADC()
         {
             cnt = 0;
         }
-        if(cnt > 250)
+        if (cnt > 250)
         {
             calibDone = 1;
         }
